@@ -48,11 +48,11 @@
 @media screen and (max-width: 815px) {
   .column{
     width: 100%;
-    margin: 15px 5px;
+    margin: 15px 25px;
     height: fit-content;
   }
   #titles{
-    margin: 15px 15px !important;
+    margin: 15px 25px !important;
   }
   .column ul{
     width: auto;

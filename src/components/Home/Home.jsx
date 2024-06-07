@@ -6,6 +6,7 @@ import html from '../../assets/icon-html.svg';
 import css from '../../assets/icon-css.svg';
 import javascript from '../../assets/icon-javascript.svg';
 import accessibility from '../../assets/icon-accessibility.svg';
+import Navbar from '../Navbar/Navbar';
 
 function Home() {
 
@@ -28,12 +29,14 @@ function Home() {
     const images = [html, css, javascript, accessibility]
 
     return (
-        <div class="container">
-            <div class="column" id='titles'>
+      <>
+        <Navbar />
+        <div className="container">
+            <div className="column" id='titles'>
             <p className='title'>Welcome to the <br /> <b>Frontend Quiz</b></p>
             <p className='mini-title'>Pick a subject to get started</p>
             </div>
-            <div class="column" id='languages'>
+            <div className="column" id='languages'>
             {text.map((quizzes, index) => (
                   <ul key={quizzes.title}>
                    <div className='languages-container'>
@@ -43,7 +46,7 @@ function Home() {
                 </ul>
                    ))}
             </div>
-        </div>
+        </div></>
     )
 }
 
